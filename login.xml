@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.second.getlocation.LoginActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BDE LOGIN"
+        android:id="@+id/BDE"
+        android:layout_alignLeft="@+id/user_id"
+        android:layout_alignStart="@+id/user_id"
+        android:foregroundGravity="center|center_horizontal"
+        android:gravity="center|center_horizontal"
+        android:textColor="#db2626"
+        android:textSize="@dimen/abc_text_size_display_1_material" />
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:text="User ID"
+            android:id="@+id/user"
+            android:layout_toLeftOf="@+id/user_id"
+            android:layout_toStartOf="@+id/user_id"
+            android:layout_gravity="left|center_vertical"
+        android:gravity="left|fill_vertical" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_id"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/button"
+            android:layout_alignStart="@+id/button"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight="0.31"
+            android:layout_toRightOf="@+id/user"
+            android:accessibilityLiveRegion="none"
+            android:maxLength="2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:layout_alignBottom="@+id/user_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/button"
+
+            android:layout_gravity="bottom"
+
+            android:longClickable="false" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+

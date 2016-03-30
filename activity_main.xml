@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/latitude_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textIsSelectable="true"
+        android:text="latitude"
+        android:shadowColor="#76be3b" />
+
+
+
+
+    <TextView
+        android:id="@+id/longitude_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="longitude"
+        android:textIsSelectable="true"
+        android:shadowColor="#f0d41c"
+        android:layout_below="@+id/latitude_text"
+        android:layout_toRightOf="@+id/start_update_button"
+        android:layout_toEndOf="@+id/start_update_button">
+
+        </TextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:onClick="startUpdatesButtonHandler"
+        android:id="@+id/start_update_button"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/latitude_text"
+        android:layout_toEndOf="@+id/latitude_text"
+        android:shadowColor="#d86d6d" />
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Stop"
+        android:onClick="stopUpdatesButtonHandler"
+    android:id="@+id/stop_updates_button"
+    android:layout_gravity="center_vertical"
+        android:layout_alignTop="@+id/start_update_button"
+        android:layout_toRightOf="@+id/start_update_button"
+        android:layout_toEndOf="@+id/start_update_button"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/last_Update_Time_Text"
+        android:text="LastUpdate"
+        android:textIsSelectable="true"
+        android:shadowColor="#f0d4"
+        android:layout_below="@+id/longitude_text"
+        android:layout_toRightOf="@+id/stop_updates_button"
+        android:layout_toEndOf="@+id/stop_updates_button" />
+
+
+</RelativeLayout>

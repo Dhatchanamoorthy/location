@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.second.getlocation.LogActivity">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="TEAM LEADER"
+        android:id="@+id/TL_button"
+        android:onClick="TL"
+        android:layout_alignBaseline="@+id/BDE_button"
+        android:layout_alignBottom="@+id/BDE_button"
+        android:layout_centerHorizontal="true"
+        android:textColor="#3ce51e" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BDE"
+        android:id="@+id/BDE_button"
+        android:onClick="BDE"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/TL_button"
+        android:layout_toStartOf="@+id/TL_button"
+        android:textColor="#dc2e2e" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_sulekkha"
+        android:baselineAlignBottom="false" />
+
+</RelativeLayout>
